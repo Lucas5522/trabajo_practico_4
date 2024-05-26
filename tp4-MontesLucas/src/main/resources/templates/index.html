@@ -50,7 +50,7 @@
 		      </ul>
 		    </div>
 		   
-		    <!-- Barra latelar incluye el aside -->
+		    <!-- Barra latelar incluye el aside (todo dentro de la barra de navegacion) -->
 		    <aside>
 			    <ul class="nav justify-content-end">
 				  <li class="nav-item">
@@ -65,6 +65,7 @@
 		</nav>
 		
 		<!-- Seccion del contenido principal -->
+		<main id="pricipal">
 		<p class="center">La Universidad nace el 25 de mayo de 1972 como universidad provincial y al año siguiente se
 		 transforma en Universidad Nacional. Comienza a funcionar sobre la base de cuatro carreras: Ingeniería Agronómica,
 		 Ingeniería de Minas, Ingeniería Metalúrgica e Ingeniería Química. Su propósito fue apuntalar las actividades de explotación
@@ -75,7 +76,7 @@
 		 recursos humanos que contribuyan al desarrollo científico, tecnológico y cultural.</p>	
 		
 		<h2 align="center">Noticias recientes</h2>
-			
+	
 		<div class="container text-center ">
 		  <div class="row">
 		    <div class="col-6 col-sm-4">
@@ -102,9 +103,27 @@
 		    </div>
 		  </div>
 		</div>	
-						
+		</main>				
 			
 		</div>
+		
+		<!-- Pie de Página -->
+		<footer>
+			<div class="container">
+			  <div class="row">
+			    <div class="col-4">FACULTAD DE INGENIERÍA - UNJu <br>
+			    						  Ítalo Palanca Nº 10<br>
+			    						  saa@unju.edu.ar <br>
+			    						  Tel: 4244196 o 4244197 int 6070</div>
+			    <div class="col-4">Redes Sociales<br>
+			    						  <a href="https://www.instagram.com/fiunju/">Instagram</a><br>
+			    						  <a href="https://www.facebook.com/fiunju/">Facebook</a><br>
+			    						  <a href="https://www.youtube.com/channel/UCgS9XJlKKSYI1oJ4lIOo77A">Youtube</a></div>
+			  </div>
+			</div>
+			<p align="center">Copyright © 2014-2022 - Facultad de Ingeniería - UNJu</p>
+		</footer>
+		
 		<script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.bundle.min.js}"></script>
 	</body>
 </html>
