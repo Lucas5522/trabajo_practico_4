@@ -7,17 +7,20 @@
 		<link th:rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
 	</head>
 	<body>
+		<!-- Modificado para que se ajuste al 100% de las ventanas graficas  -->
+		<div class="container-fluid">
+		
 		
 		<!-- Encabezado -->
 		<header>
-		<div class="container text-center">
+		<div class="container-fluid text-center">
 		  <div class="row align-items-start">
-		    <div class="col-2 border">
+		    <div class="col-2">
 		      <img alt="logotipo" src="/image/logotipo.png" width="150" height="150">
 		    </div>
-		    <div class="col border" align="left">
+		    <div class="col" align="left">
 		      <h1 id="titulo" >Universidad Nacional de Jujuy</h1>
-		      <h2 id="slogan">El Principo del Fin</h2>
+		      <h2 id="slogan">Por una educación para todos </h2>
 		    </div>
 		  </div>
 		</div>
@@ -60,10 +63,48 @@
 		    </aside>
 		  </div>
 		</nav>
+		
+		<!-- Seccion del contenido principal -->
+		<p class="center">La Universidad nace el 25 de mayo de 1972 como universidad provincial y al año siguiente se
+		 transforma en Universidad Nacional. Comienza a funcionar sobre la base de cuatro carreras: Ingeniería Agronómica,
+		 Ingeniería de Minas, Ingeniería Metalúrgica e Ingeniería Química. Su propósito fue apuntalar las actividades de explotación
+		 e industrialización de los recursos naturales de Jujuy. Las tres últimas carreras mencionadas pasan a constituir la actual
+		 Facultad de Ingeniería que, con el transcurso de los años, sumó a ellas un número importante de otras carreras.
+		 Las políticas de la Universidad Nacional de Jujuy, y especialmente de la Facultad de Ingeniería, tienden a ampliar
+		 el áreade influencia y a fortalecer su acción institucional, en respuesta a la demanda social creciente de formación de
+		 recursos humanos que contribuyan al desarrollo científico, tecnológico y cultural.</p>	
+		
+		<h2 align="center">Noticias recientes</h2>
 			
-		
-		
-		
+		<div class="container text-center ">
+		  <div class="row">
+		    <div class="col-6 col-sm-4">
+		    	<img alt="caedi" src="image/cadi-caedi.png" width="250" height="250">
+			    <p>El Comité Organizador del CADI-CAEDI 2024 invita a los/as estudiantes a la convocatoria de la propuesta “IngeniaVoz”,
+			       espacio creado para ellos en el marco del CADI-CAEDI 2024.  Es la primera vez que se cuenta con un espacio sólo para
+			       estudiantes. </p>
+		    </div>
+		    <div class="col-6 col-sm-4">
+		    	<img alt="cumple" src="image/cumple-faculta.jpg" width="300" height="400">
+		    	<p>📣 ¡52° Aniversario de nuestra querida Facultad de Ingeniería!
+				   Y lo festeja con una riquísima chocolatada, mañana viernes 24 de mayo a las 10.00 hs en el patio de Decanato </p>
+		    </div>			
+		    <div class="col-6 col-sm-4">
+		    	<img alt="posgrado-fisicoquimica" src="image/Curso-Posgrado-Fisicoquimica.jpg" width="250" height="250">
+		    	<p>Curso de Posgrado "Fisicoquímica"
+				   La inscripción al curso se realiza completando el siguiente formulario:</p>
+				<a href="https://docs.google.com/forms/d/1uRMG2iAZZ_5PqNQyakkRO-Vyt4ux7CZ_U6xm3HvKIhk/viewform?edit_requested=true" >Formulario de inscripción</a>
+				<p>Una vez hecha la inscripción se debe realizar el pago mediante transferencia al siguiente alias: COOPERADORA.FACULTAD
+				   (todo con mayúsculas y separadas por un punto).
+				   Una vez realizada la transferencia, se deberá completar el siguiente formulario con los datos de facturación
+				   y adjuntar el comprobante.</p>
+				   <a href="https://docs.google.com/forms/d/11rsQNFnS5FeuoWINGDNPiGGX353ZaQqzwxB1IHoaqWs/viewform?edit_requested=true">Formulario final</a>
+		    </div>
+		  </div>
+		</div>	
+						
+			
+		</div>
 		<script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.bundle.min.js}"></script>
 	</body>
 </html>
