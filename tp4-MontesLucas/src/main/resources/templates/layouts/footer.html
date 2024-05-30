@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="es">
-	<head th:fragment="footer">
-		<meta charset="UTF-8">
-		<title>Insert title here</title>
-	</head>
+	<head data-th-replace="~{/layouts/header :: encabezado}">
 	<body>
-	
+		<footer th:fragment="footer">
+			<div class="container">
+			  <div class="row">
+			    <div class="col-4">FACULTAD DE INGENIERÍA - UNJu <br>
+			    						  Ítalo Palanca Nº 10<br>
+			    						  saa@unju.edu.ar <br>
+			    						  Tel: 4244196 o 4244197 int 6070</div>
+			    <div class="col-4">Redes Sociales<br>
+			    						  <a href="https://www.instagram.com/fiunju/">Instagram</a><br>
+			    						  <a href="https://www.facebook.com/fiunju/">Facebook</a><br>
+			    						  <a href="https://www.youtube.com/channel/UCgS9XJlKKSYI1oJ4lIOo77A">Youtube</a></div>
+			  </div>
+			</div>
+			<p align="center">Copyright © 2014-2022 - Facultad de Ingeniería - UNJu</p>	
+		</footer>
 	</body>
 </html>
