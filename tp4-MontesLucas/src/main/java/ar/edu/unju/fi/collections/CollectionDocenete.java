@@ -13,7 +13,7 @@ public class CollectionDocenete {
 
 private static List <Docente> docentes = new ArrayList<Docente>();
 	
-	/**Creacion del array lsit Dcoentes**/
+	/**Creacion del array list Dcoentes**/
 	public static List<Docente> getDocente(){
 		if(docentes.isEmpty()) {
 			docentes.add(new Docente(1, "Pepe", "Pepe", "pepe@gmail.com", 388999999));

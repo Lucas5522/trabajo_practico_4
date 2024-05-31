@@ -7,14 +7,14 @@ public class Materia {
 	int cantidadHoras;
 	String modalidad;
 	Docente docente;
-	Carrera carrera;
+	String carrera;
 	
 	public Materia() {
 		// TODO Auto-generated constructor stub
 	}
 
 	public Materia(int codigo, String nombre, int curso, int cantidadHoras, String modalidad, Docente docente,
-			Carrera carrera) {
+			String carrera) {
 		super();
 		this.codigo = codigo;
 		this.nombre = nombre;
@@ -79,11 +79,11 @@ public class Materia {
 		this.docente = docente;
 	}
 
-	public Carrera getCarrera() {
+	public String getCarrera() {
 		return carrera;
 	}
 
-	public void setCarrera(Carrera carrera) {
+	public void setCarrera(String carrera) {
 		this.carrera = carrera;
 	}
 	
