@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+	<head th:fragment="head">
+		<meta charset="UTF-8">
+		<title data-th-text="${titulo}"></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link th:rel="stylesheet" data-th-href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+	</head>
+	<body>
+		<header th:fragment="header">
+			<div class="container-fluid text-center">
+			  <div class="row align-items-start">
+			    <div class="col-2">
+			      <img alt="logotipo" src="/image/logotipo.png" width="150" height="150">
+			    </div>
+			    <div class="col" align="left">
+			      <h1 id="titulo" >Universidad Nacional de Jujuy</h1>
+			      <h2 id="slogan">Por una educación para todos </h2>
+			    </div>
+			  </div>
+			</div>
+		</header>
+	</body>
+</html>
