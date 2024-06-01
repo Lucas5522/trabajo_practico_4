@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.function.Predicate;
 
-import ar.edu.unju.fi.model.Carrera;
+
 import ar.edu.unju.fi.model.Docente;
 import ar.edu.unju.fi.model.Materia;
 
@@ -78,7 +78,5 @@ private static List <Materia> materias = new ArrayList<Materia>();
 			return null;
 		}
 	}
-	
-	
 	
 }
