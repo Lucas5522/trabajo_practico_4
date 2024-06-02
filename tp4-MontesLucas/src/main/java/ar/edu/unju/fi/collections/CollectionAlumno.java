@@ -14,22 +14,22 @@ public class CollectionAlumno {
 private static List <Alumno> alumnos = new ArrayList<Alumno>();
 	
 	/**Creacion del array list Dcoentes**/
-	public static List<Alumno> getDocente(){
+	public static List<Alumno> getAlumno(){
 		if(alumnos.isEmpty()) {
-			alumnos.add(new Alumno(38909909, "Mondogo", "Papa", "mondongo@gmail.com", 388222222,  "2007-12-24", "Los Perales", 0001));
-			alumnos.add(new Alumno(38909909, "Ector", "Decimo Meridio", "mondongo@gmail.com", 388928372,  "2000-08-12", "Grecia", 0002));
-			alumnos.add(new Alumno(38111111, "Esposo ", "De una esposa", "mondongo@gmail.com", 388126576,  "2007-03-21", "Olimpo", 0003));
+			alumnos.add(new Alumno(38909909, "Mondogo", "Papa", "mondongo@gmail.com", 388222222,  "24-12-2007", "Los Perales", 0001));
+			alumnos.add(new Alumno(38909909, "Ector", "Decimo Meridio", "ector@gmail.com", 388928372,  "12-08-2000", "Grecia", 0002));
+			alumnos.add(new Alumno(38111111, "Esposo ", "De una esposa", "esposo@gmail.com", 388126576,  "21-03-1999", "Olimpo", 0003));
 		}
 		return alumnos;
 	}
 	
 	/** Agregar una alumno **/
-	public static void agregarDocente(Alumno alumno) {
+	public static void agregarAlumno(Alumno alumno) {
 		alumnos.add(alumno);
 	}
 	
 	/** Eliminar una alumno **/
-	public static void eliminarDocente(int libretaUniversitariaAlumno) {
+	public static void eliminarAlumno(int libretaUniversitariaAlumno) {
 		Iterator<Alumno> iterator = alumnos.iterator();
 		while (iterator.hasNext()) {
 			if (iterator.next().getLibretaUniversitaria() == libretaUniversitariaAlumno) {
