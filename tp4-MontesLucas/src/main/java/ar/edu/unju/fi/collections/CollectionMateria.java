@@ -17,29 +17,15 @@ public class CollectionMateria {
 private static List <Materia> materias = new ArrayList<Materia>();
 	
 	/**Creacion del array lsit carrera**/
-	public static List<Materia> getCarreras(){
-		Docente docentes = getDocenteBy(1);
+	public static List<Materia> getMateria(){
 		if(materias.isEmpty()) {
-			materias.add(new Materia(1, "APU", 82, 10, "Virtual", docentes, "APU"));
-			materias.add(new Materia(2, "Ing.Indius", 120, 30, "Presencial", docentes, "Ing.Industrial"));
-			materias.add(new Materia(1, "Ing.Inf", 140, 29, "Virtual", docentes, "Ing.Informatica"));
+			materias.add(new Materia(1, "Programacion", 82, 10, "Virtual", "Lic.Tata", "APU"));
+			materias.add(new Materia(2, "Historia de la computacion", 120, 30, "Presencial", "Lic.Mono", "Ing.Industrial"));
+			materias.add(new Materia(1, "Creacion de aplicaciones", 140, 29, "Virtual", "Lic.Kemo", "Ing.Informatica"));
 			
 		}
 		return materias;
 	}
-	
-	private static Docente getDocenteBy(int legajo) {
-		Docente[] docentes = null;
-		for(Docente docen : docentes) {
-			if (docen.getLegajo() == legajo) {
-				return docen;
-			}		
-		}
-		return null;
-	}
-	
-	
-	
 	
 	/** Agregar una materia **/
 	public static void agregarMateria(Materia materia) {
@@ -57,7 +43,7 @@ private static List <Materia> materias = new ArrayList<Materia>();
 	}
 	
 	/** modificar una materia **/
-	public static void modificarCarrera(Materia materia) {
+	public static void modificarMateria(Materia materia) {
 		for(Materia materi : materias) {
 			if (materi.getCodigo() == materi.getCodigo()) {
 				/**FALTA AGREGAR LAS OPCIONES A MODIFICAR**/
@@ -69,7 +55,7 @@ private static List <Materia> materias = new ArrayList<Materia>();
 	
 	
 	/** Buscar una materia **/
-	public static Materia buscarCarrera(int codigo){
+	public static Materia buscarMateria(int codigo){
 		Predicate<Materia> filterCodigo = c -> c.getCodigo() == codigo;
 		Optional<Materia> materia = materias.stream().filter(filterCodigo).findFirst(); 
 		if (materia.isPresent()) {
