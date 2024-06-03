@@ -19,8 +19,8 @@ private static List <Carrera> carreras = new ArrayList<Carrera>();
 	public static List<Carrera> getCarreras(){
 		if(carreras.isEmpty()) {
 			carreras.add(new Carrera(1, "APU",3, "activo"));
-			carreras.add(new Carrera(2, "Ingenieria Industrial",3, "activo"));
-			carreras.add(new Carrera(3, "Ingenieria Informatica",3, "Inactivo"));
+			carreras.add(new Carrera(2, "Ingenieria Industrial",5, "activo"));
+			carreras.add(new Carrera(3, "Ingenieria Informatica",5, "Inactivo"));
 		}
 		return carreras;
 	}
